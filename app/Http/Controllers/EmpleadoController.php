@@ -28,9 +28,9 @@ class EmpleadoController extends Controller
         $request->validate([
             'nombre' => 'required',
             'apellido' => 'required',
-            'posición' => 'required',
+            'posicion' => 'required',
             'departamento_id' => 'required',
-            'fecha_contratación' => 'required|date',
+            'fecha_contratacion' => 'required|date',
             'salario' => 'required|numeric',
         ]);
 
@@ -57,9 +57,9 @@ class EmpleadoController extends Controller
         $request->validate([
             'nombre' => 'required',
             'apellido' => 'required',
-            'posición' => 'required',
+            'posicion' => 'required',
             'departamento_id' => 'required',
-            'fecha_contratación' => 'required|date',
+            'fecha_contratacion' => 'required|date',
             'salario' => 'required|numeric',
         ]);
 

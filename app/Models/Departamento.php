@@ -9,7 +9,7 @@ class Departamento extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nombre', 'ubicación', 'número_telefono'];
+    protected $fillable = ['nombre', 'ubicacion', 'numero_telefono'];
 
     public function empleados()
     {

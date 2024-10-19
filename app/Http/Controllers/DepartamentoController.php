@@ -22,8 +22,8 @@ class DepartamentoController extends Controller
     {
         $request->validate([
             'nombre' => 'required',
-            'ubicación' => 'required',
-            'número_telefono' => 'required',
+            'ubicacion' => 'required',
+            'numero_telefono' => 'required',
         ]);
 
         Departamento::create($request->all());
@@ -44,8 +44,8 @@ class DepartamentoController extends Controller
     {
         $request->validate([
             'nombre' => 'required',
-            'ubicación' => 'required',
-            'número_telefono' => 'required',
+            'ubicacion' => 'required',
+            'numero_telefono' => 'required',
         ]);
 
         $departamento->update($request->all());

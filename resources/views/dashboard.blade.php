@@ -1,17 +1,29 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts.layout')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
+@section('content')
+    <h1>Bienvenido al Dashboard</h1>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Gestión de Empleados</h5>
+            <p class="card-text">Administra los empleados de la empresa.</p>
+            <a href="{{ route('empleados.index') }}" class="btn btn-primary">Ir a Empleados</a>
         </div>
     </div>
-</x-app-layout>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Gestión de Departamentos</h5>
+            <p class="card-text">Administra los departamentos de la empresa.</p>
+            <a href="{{ route('departamentos.index') }}" class="btn btn-primary">Ir a Departamentos</a>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Gestión de Asistencias</h5>
+            <p class="card-text">Administra las asistencias de los empleados.</p>
+            <a href="{{ route('asistencias.index') }}" class="btn btn-primary">Ir a Asistencias</a>
+        </div>
+    </div>
+@endsection

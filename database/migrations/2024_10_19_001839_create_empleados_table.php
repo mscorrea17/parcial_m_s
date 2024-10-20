@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('posicion');
             $table->foreignId('departamento_id')->constrained()->onDelete('cascade');
             $table->date('fecha_contratacion');
-            $table->decimal('salario', 8, 2);
+            $table->integer('salario');
             $table->timestamps();
         });
     }
